@@ -6,7 +6,7 @@
 # character. In the GitHub Action container, it interprets it as a literal 'n'
 IFS=$"
 "
-
+echo "
 # Available Resources
 "
 if [ "$BUILD_CORE" = true ]; then
