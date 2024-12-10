@@ -54,7 +54,7 @@ jobs:
           IFS="$OIFS"
           git config --global user.name 'ODD Bot'
           git config --global user.email '<>'
-          git add rng/${GITHUB_REPOSITORY}/*.rng documentation/${GITHUB_REPOSITORY}/*.html  available-schemata.md
+          git add rng/${GITHUB_REPOSITORY}/*.rng documentation/${GITHUB_REPOSITORY}/*.html  ${GITHUB_REPOSITORY}/available-schemata.md
           git diff-index --quiet HEAD || (git commit -am "ci: generate schemata and documentation" && git push)
         env:
           BUILD_CORE: ${{ vars.BUILD_CORE }}
