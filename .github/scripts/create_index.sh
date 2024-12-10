@@ -6,9 +6,6 @@
 # character. In the GitHub Action container, it interprets it as a literal 'n'
 IFS=$"
 "
-echo "---
-permalink: available-schemata.html
----
 
 # Available Resources
 "
