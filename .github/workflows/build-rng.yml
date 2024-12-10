@@ -49,7 +49,7 @@ jobs:
             java -DentityExpansionLimit=9000000 -jar $GITHUB_WORKSPACE/saxon-he-12.1.jar -xi:on -o:../documentation/${GITHUB_REPOSITORY}/${rng_name}.html "$GITHUB_WORKSPACE/full.odd" $GITHUB_WORKSPACE/tei/odds/odd2html.xsl
           done;
           popd
-          .github/scripts/create_index.sh >available-schemata.md
+          .github/scripts/create_index.sh >${GITHUB_REPOSITORY}/available-schemata.md
           IFS="$OIFS"
           git config --global user.name 'ODD Bot'
           git config --global user.email '<>'
